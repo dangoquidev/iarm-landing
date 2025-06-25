@@ -221,22 +221,22 @@ const App: React.FC = () => {
           </div>
 
           <div className="grid md:grid-cols-4 gap-10">
-            {teamMembers.map((member, index) => (
-              <div key={index} className="text-center group">
-                <div className="bg-white p-10 rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
-                  <div className="w-32 h-32 bg-gradient-to-br from-blue-500 to-red-500 rounded-full mx-auto mb-8 flex items-center justify-center text-white text-4xl font-bold shadow-xl group-hover:scale-110 transition-transform">
-                    {member.name.split(' ').map(n => n[0]).join('')}
-                  </div>
-                  <h3 className="text-2xl font-bold text-gray-900 mb-4">
-                    {member.name}
-                  </h3>
-                  <p className="text-gray-600 text-lg">
-                    {member.role}
-                  </p>
-                </div>
-              </div>
-            ))}
-          </div>
+  {teamMembers.map((member, index) => (
+    <div key={index} className="text-center group h-full">
+      <div className="bg-white p-10 rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 h-full flex flex-col">
+        <div className="w-32 h-32 bg-gradient-to-br from-blue-500 to-red-500 rounded-full mx-auto mb-8 flex items-center justify-center text-white text-4xl font-bold shadow-xl group-hover:scale-110 transition-transform">
+          {member.name.split(' ').map(n => n[0]).join('')}
+        </div>
+        <h3 className="text-2xl font-bold text-gray-900 mb-4 flex-grow">
+          {member.name}
+        </h3>
+        <p className="text-gray-600 text-lg">
+          {member.role}
+        </p>
+      </div>
+    </div>
+  ))}
+</div>
         </div>
       </section>
 
