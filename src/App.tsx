@@ -188,24 +188,12 @@ const App: React.FC = () => {
             </h2>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-12">
-            <div className="bg-gradient-to-br from-gray-100 to-gray-50 rounded-3xl p-16 aspect-video flex items-center justify-center shadow-xl hover:shadow-2xl transition-shadow group">
-              <div className="text-center">
-                <div className="w-24 h-24 bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl mx-auto mb-8 flex items-center justify-center shadow-xl group-hover:scale-110 transition-transform">
-                  <Zap className="w-12 h-12 text-white" />
-                </div>
-                <h3 className="text-3xl font-bold text-gray-900 mb-4">Interface principale</h3>
-                <p className="text-gray-600 text-xl">Transcription en temps réel</p>
-              </div>
-            </div>
+          <div className="grid md:grid-cols-1 gap-12">
             
             <div className="bg-gradient-to-br from-gray-100 to-gray-50 rounded-3xl p-16 aspect-video flex items-center justify-center shadow-xl hover:shadow-2xl transition-shadow group">
               <div className="text-center">
-                <div className="w-24 h-24 bg-gradient-to-br from-red-500 to-red-600 rounded-2xl mx-auto mb-8 flex items-center justify-center shadow-xl group-hover:scale-110 transition-transform">
-                  <Shield className="w-12 h-12 text-white" />
-                </div>
                 <h3 className="text-3xl font-bold text-gray-900 mb-4">Dashboard ARM</h3>
-                <p className="text-gray-600 text-xl">Extraction de mots-clés</p>
+                <img src="/iarm_dashboard.png" alt="IARM Dashboard" className='rounded-2xl'/>
               </div>
             </div>
           </div>
