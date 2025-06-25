@@ -1,8 +1,7 @@
-import React from 'react';
 import { ChevronDown, Shield, Clock, Users, Github, Linkedin, Twitter, Download } from 'lucide-react';
 
 const App = () => {
-  const scrollToSection = (sectionId) => {
+  const scrollToSection = (sectionId: string) => {
     document.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth' });
   };
 
